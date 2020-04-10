@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
     form.name.value = '';
     form.email.value = '';
     form.subject.value = '';
-    form.escription.value = '';
+    form.description.value = '';
     thank();
 })
 
