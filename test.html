@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+  <title></title>
+</head>
+<body>
+  <p id="list1"></p>
+  <br>
+  <li id="newlist"></li>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDaDTSKHE1S_5QLtda58EsO_fut6_FE86I",
+      authDomain: "new-project-sfscp.firebaseapp.com",
+      databaseURL: "https://new-project-sfscp.firebaseio.com",
+      projectId: "new-project-sfscp",
+      storageBucket: "new-project-sfscp.appspot.com",
+      messagingSenderId: "1054088407544",
+      appId: "1:1054088407544:web:8fe05759ae0735d3660e0d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
